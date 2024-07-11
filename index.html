@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DL이앤씨</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        img{border: 0; vertical-align: top;}
+        a{text-decoration: none; color: black;}
+        
+        .clearFix:after{
+            content: "";
+            display: block;
+            clear:both;
+        }
+        #wrap{
+            width: 100%; height: 60px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            left: 0; top: 0;
+            transition: all 0.3s;
+            overflow: hidden;
+            
+
+        }
+        #wrap:hover{
+            width: 100%;
+            height: 350px;
+            /* background-color: #ffffff; */
+            
+            
+        }
+            
+        
+        #header{
+            /* overflow: hidden; */
+            width: 1500px; height: 60px;
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            position: relative;           
+            
+        }
+        #header .logo{
+            float: left;
+            width: 100px;
+            margin-top: 20px;
+        }
+        #header .menu{
+            margin-left: 200px;
+            
+        }
+        #header .menu>li{
+            float: left;
+            width:150px;
+            margin-top: 20px;
+            /* margin-left: 50px; */
+            position: relative;
+            
+        }
+        #header .menu>li:hover:before{
+            content: "";
+            display: block;
+            width: 4px; height: 13px;
+            background-color: rgb(8, 68, 68);
+            position: absolute;
+            left: -10px; top: 5px;
+        }
+        
+        #header .menu>li:hover>a{color:rgb(5, 107, 107);}
+        #header .menu>li .nav{
+            position: absolute;
+            left:-20px; top:40px;
+            /* background-color: rgb(255, 93, 93); */
+            width: 150px;  
+            height: 290px;
+            /* border:1px solid red; */
+            padding-left: 20px;  
+            /* border:1px solid red;   */
+            box-sizing: border-box;        
+            line-height: 40px;
+            border-left: 1px solid rgba(128, 128, 128, 0.455);
+            font-size: 10pt;
+        
+            
+            
+        }
+        /* #header ul.menu ul.nav{display: none;} */
+        
+        #header:hover{
+            /* display: block; */
+        }
+        #header .menu:hover .nav li{cursor: pointer;}
+        #header .menu:hover .nav li:hover{color:rgb(54, 54, 126);}
+        #header ul li a{
+            color: #4d4d4d;
+        }
+        
+        #header .etc{
+            position: absolute;
+            top:20px; right:20px;
+        }
+        #header .etc>li{
+            float:left;
+            margin-left: 15px;
+        }
+
+
+
+        /* ------------------------------------------------------------ */
+        #section{
+            background-size: cover;
+            width: 100%;
+            height: 1080px;
+            margin: 0 auto;
+            background-image: url(1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            box-sizing: border-box;
+            
+        }
+        #section .con{
+            text-align: center;
+            width: 1150px; height: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            }
+        #section .con h1{
+            font-size: 50pt;
+            color: #ffffff;
+            width: 1150px;
+            margin-top: 200px;
+        
+        }
+        #section .con h2{
+            width: 1150px;
+            color: white;
+            margin-bottom: 50px;
+        
+        }
+        #section .con .box{   
+            overflow: hidden;
+        }
+        #section .con .box>div{
+            float: left;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 350px; height: 196px;
+            box-sizing: border-box;
+            border:5px solid rgba(255, 255, 255, 0);
+            margin-right: 25px;
+        }
+        #section .con .box>div:hover{
+            border:5px solid white;
+        }
+        #section .con .box .img1{
+            background-image: url(2-1.jpg);
+        }
+        #section .con .box .img2{
+            background-image: url(2-2.jpg);
+        }
+        #section .con .box .img3{
+            background-image: url(2-3.jpg);
+        }
+        #section .con .text{
+            overflow: hidden;
+            width: 1150px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #section .con .text p{
+            color: white;
+            width: 1150px; height: 10px;
+            margin-bottom: 50px;
+        }
+        #section .con .text p:nth-child(1){
+            margin-top: 90px;
+        }
+        #section .con .text p:nth-child(2){
+            border: 2px solid white;
+            width: 200px; height: 50px;
+            margin: 0 auto;
+            line-height: 50px;
+        }
+        #section .con2{
+            width: 1150px; 
+            margin: 0 auto;
+            overflow: hidden;
+            border-top: 2px solid white;
+        }
+    
+        #section .con2 p{
+            color: white;
+            
+        }
+        #section .con2 a{
+            color: white;
+        }
+        
+        #section .con2 li{
+            float: left;
+            margin-left: 60px;
+            font-size: 15pt;
+        }
+        
+        #footer{
+            overflow: hidden;
+            
+        }
+        #footer .con3>ul{
+            overflow: hidden;
+            width: 1150px;
+            margin: 0 auto;
+        }
+        #footer .con3 li{
+            float: left;
+            
+        }
+        #footer .con3 p{
+            overflow: hidden;
+        }
+    
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="clearFix">
+        <h1 class="logo">
+            <img src="2.png" alt="로고">
+        </h1>
+        <ul class="menu clearFix">
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="nav">
+                    <li>기업정보</li>
+                    <li>CEO 인사말</li>    
+                    <li>기업연혁</li>   
+                    <li>그룹사현황</li>    
+                    <li>CONTACT</li>  
+                    <li>브랜드 소개</li>
+                    <li>대림이란</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">사업소개</a>
+                <ul class="nav">
+                    <li>사업개요</li>
+                    <li>건축</li>    
+                    <li>주택</li>   
+                    <li>토목</li>    
+                    <li>플랜트</li>  
+                </ul>
+            </li>
+            <li>
+                <a href="#">기술혁신</a>
+                <ul class="nav">
+                    <li>기술개발원소개</li>
+                    <li>주요연구분야</li>    
+                    <li>지식재산권</li>   
+                </ul>
+            </li>
+            <li>
+                <a href="#">지속가능경영</a>
+                <ul class="nav">
+                    <li>정도경영</li>
+                    <li>상생경영</li>    
+                    <li>품질경영</li>   
+                    <li>안전보건경영</li>    
+                    <li>환경경영</li>  
+                    <li>사회공헌</li>
+                    <li>지속가능경영보고서</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">투자정보</a>
+                <ul class="nav">
+                    <li>그룹</li>
+                    <li>자료실</li>    
+                    <li>재무정보</li>   
+                    <li>기업지배구조</li>    
+                    <li>ESG</li>  
+                </ul>
+            </li>
+            <li>
+                <a href="#">홍보센터</a>
+                <ul class="nav">
+                    <li>DL소식</li>
+                    <li>홍보영상</li>    
+                    <li>소개</li>   
+                </ul>
+            </li>
+            <li>
+                <a href="#">인재채용</a>
+                <ul class="nav">
+                    <li>인재상</li>
+                    <li>인사제도</li>    
+                    <li>채용정보</li>   
+                </ul>
+            </li>
+        </ul>
+        <ul class="etc clearFix">
+            <li><img src="3.png"></li>
+            <li><p>ENG</p></li>
+            <li><img src="4.png"></li>
+        </ul>  
+    </div>
+</div>
+
+    <div id="section">
+        <div class="con">
+            <h1>INNOVATION</h1>
+            <h2>기본을 지켜 혁신을 이루다.</h2>
+            <div class="box">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+            </div>
+            <div class="text">
+                <p>대한민국 건설을 리드해온 DL이앤씨는<br>
+                이제 종합설계시공(EPC) 뿐만 아니라 토탈솔루션 사업자로서 도약합니다.</p>
+                <p>사업소개 바로가기</p>
+            </div>
+        </div>
+        <ul class="con2">
+            <li><p>DL이앤씨 디지털 채널</p></li>
+            <li><p>></p></li>
+            <li><img src="3-1.png"><a href="#">유튜브</a></li>
+            <li><img src="3-2.png"><a href="#">네이버 블로그</a></li>
+            <li><img src="3-3.png"><a href="#">링크드인</a></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <ul class="con3">
+            <li>전자공고</li>
+            <li>|</li>
+            <li>원가절감제안</li>
+            <li>|</li>
+            <li>개인정보처리방침</li>
+            <li>|</li>
+            <li>영상정보처리기기운영관리방침</li>
+            <li>|</li>
+            <li>이메일무단수집거부</li>
+        </ul>
+        <p>서울 종로구 통일로 134 D타워 돈의문 COPYRIGHT (c) 2021 DL이앤씨 All RIGHTS RESERVED.</p>
+    </div>
+    
+</body>
+</html>
